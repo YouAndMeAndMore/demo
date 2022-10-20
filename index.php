@@ -14,16 +14,8 @@
 	<body>
 
 		<div id="page">
-			<header>
-				<nav class="main-navbar">
-					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="despre noi.php">Despre noi</a></li>
-						<li><a href="contact.php">Contact</a></li>
-						<li class="main-navbar-phone"><a href="#">&#128222;</a></li>
-					</ul>
-				</nav>
-			</header>
+
+			<?php include 'includes/header.php'?>
 
 			<div id="demo" class="carousel slide" data-bs-ride="carousel">
 	
@@ -147,7 +139,7 @@
 								<h4>Nutritie</h4>
 								<p>Există o legatura stransa intre nutritie si sanatate.</p>
 								<div>
-									<h3><?php echo $nr_nutritie ?></h3>
+									<h3><?php echo number_format($nr_nutritie); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -157,7 +149,7 @@
 								<h4>Socializare</h4>
 								<p>Cultivarea relatiilor sociale este importanta pentru sanatate.</p>
 								<div>
-									<h3><?php echo $nr_socializare ?></h3>
+									<h3><?php echo number_format($nr_socializare); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -167,7 +159,7 @@
 								<h4>Miscare</h4>
 								<p>Corpul uman este conceput sa se miste, sa alerge, sa sara, sa manipuleze lucruri.</p>
 								<div>
-									<h3><?php echo $nr_miscare ?></h3>
+									<h3><?php echo number_format($nr_miscare); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -177,7 +169,7 @@
 								<h4>Miscare</h4>
 								<p>Corpul uman este conceput sa se miste, sa alerge, sa sara, sa manipuleze lucruri.</p>
 								<div>
-									<h3><?php echo $nr_suma ?></h3>
+									<h3><?php echo number_format($nr_suma); ?></h3>
 									<p>total participanti</p>
 								</div>
 							</div>
@@ -189,31 +181,7 @@
 
 			</article>	
 
-			<footer>
-
-				<section class="sectiune4">
-					<img src="images/logo_footer.jpg" alt="logoGiveForms" class="logo">
-					<form action="#">
-						<p>Aboneaza-te la newsletter!</p>
-
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="d-flex col-lg-4">
-									<input type="text" class="form-control" placeholder="Adresa de e-mail" aria-label="Adresa de e-mail" aria-describedby="btnGroupAddon">
-									<button class="btn btn-primary" type="submit">Trimite</button>
-								</div>
-							</div>
-						</div>
-
-					</form>
-
-					<p>&copy; <?php echo date("Y"); ?> Toate drepturile rezervate!</p>
-
-				</section>
-
-		
-
-			</footer>
+			<?php include 'includes/footer.php';?>
 
 		</div>
 
