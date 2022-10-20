@@ -1,0 +1,9 @@
+debul.log
+debug.log
+$ echo workout-6-helerea-adela.7z >> .gitignore
+  
+$ git rm --cached workout-6-helerea-adela.7z
+rm 'workout-6-helerea-adela.7z'
+  
+$ git commit -m "Start ignoring workout-6-helerea-adela.7z"
+*.7z
