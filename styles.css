@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#F5DEB3;
+  display: flex;
+  text-indent: 10px;
+  position: relative;
+  align-items: center;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.main-navbar li a {
+  float: left;
+  padding: 12px 12px;
+  text-decoration: none;
+  color: darkblue
+}
+
+.main-navbar-phone{
+  font-size: 1.5em;
+  position: absolute;
+  right: 0;
+}
+
+.main-carousel .carousel-item-img {
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main-carousel .carousel-item > div:before{
+  content:"";
+  display:block;
+  padding-top:50%;
+}
+
+
+.prezentare {
+  background-color: lightsalmon;
+}
+
+
+/*
+.container {
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+}
+*/
+
+.caracteristici {
+  background-color: lightgray;
+
+}
+
+.caracteristica {
+  text-align: center;
+}
+
+.caracteristici .caracteristica img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #808080;
+}
+
+
+
+.logo{
+  max-width: 100px;
+  border-style:none;
+}
+
+.sectiune4 {
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:#77c7c8;
+}
+
+.fw-bold {
+  margin-bottom: 0px;
+}
+
+div .card-body {
+  padding: 5px 10px;
+}
+
+.sectiune-echipa {
+  background-color: lightgoldenrodyellow;
+  padding: 30px;
+}
+
+
+.embed-responsive .card-img-top {
+  object-fit: cover;
+}
+
+.link-success {
+  text-decoration: none;
+  background-color: lightskyblue;
+}
+
+.container .row .card p{
+  padding: 0px;
+  margin: auto;
+}
+
+article .continut-contact {
+  padding:20px;
+}
