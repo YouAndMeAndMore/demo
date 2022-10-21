@@ -119,13 +119,13 @@
 				<?php
 					$x = 0;  
 
-					$nr_nutritie = 1550;
-					$nr_socializare = 1320;
-					$nr_miscare = 800;
+					$nr_nutritie = 10000;
+					$nr_socializare = 800;
+					$nr_miscare = 60000;
 					$nr_suma = $nr_nutritie+$nr_socializare+$nr_miscare;
 
 					$txt="participanti la modulul";
-					
+
 				?>
 
 				<div class="caracteristici py-5">
@@ -139,7 +139,7 @@
 								<h4>Nutritie</h4>
 								<p>Există o legatura stransa intre nutritie si sanatate.</p>
 								<div>
-									<h3><?php echo number_format($nr_nutritie); ?></h3>
+									<h3><?php echo number_format($nr_nutritie, 0, ',', '.',); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -149,7 +149,7 @@
 								<h4>Socializare</h4>
 								<p>Cultivarea relatiilor sociale este importanta pentru sanatate.</p>
 								<div>
-									<h3><?php echo number_format($nr_socializare); ?></h3>
+									<h3><?php echo number_format($nr_socializare, 0, ',', '.',); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -159,7 +159,7 @@
 								<h4>Miscare</h4>
 								<p>Corpul uman este conceput sa se miste, sa alerge, sa sara, sa manipuleze lucruri.</p>
 								<div>
-									<h3><?php echo number_format($nr_miscare); ?></h3>
+									<h3><?php echo number_format($nr_miscare, 0, ',', '.',); ?></h3>
 									<p><?php echo $txt." ".++$x; ?></p>	
 								</div>
 							</div>
@@ -169,7 +169,15 @@
 								<h4>Miscare</h4>
 								<p>Corpul uman este conceput sa se miste, sa alerge, sa sara, sa manipuleze lucruri.</p>
 								<div>
-									<h3><?php echo number_format($nr_suma); ?></h3>
+									<h3>
+										<?php $nr_suma; if ( $nr_suma >= 50000 ){ ?> 
+											<strong>
+												<?php echo number_format($nr_suma, 0, ',', '.',); ?>
+											</strong> 
+										<?php }else{ ?> 
+											<?php print $nr_suma; ?>
+										<?php } ?>
+									</h3>
 									<p>total participanti</p>
 								</div>
 							</div>
@@ -186,7 +194,11 @@
 		</div>
 
 		<!--bootstrap javascript-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		<script 
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+			crossorigin="anonymous">
+		</script>
 	
 
 
